@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Page Title</title>
+<script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.0/dist/JsBarcode.all.min.js"></script>
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="">
+
+<body>
+<svg id="barcode"></svg>
+<div id ="product_code">IP964WFSG</div>
+ <script type="text/javascript"> 
+    var product = document.getElementById("product_code");
+    var text = product.textContent;
+    JsBarcode("#barcode",text);
+</script>
+</body>
+</html>
